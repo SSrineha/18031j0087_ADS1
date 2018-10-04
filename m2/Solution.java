@@ -19,7 +19,7 @@ public class Solution {
 
 }
 
-public class Percolation {
+ class Percolation {
 	private boolean[][] sites;
 	private int grid;
 	private int beginNode;
@@ -118,7 +118,7 @@ public class Percolation {
 
 }
 
-public class WeightedQuickUnionUF {
+ class WeightedQuickUnionUF {
 	private int[] id; // id[i] = parent of i
 	private int[] sz; // sz[i] = number of objects in subtree rooted at i
 	private int count; // number of components
