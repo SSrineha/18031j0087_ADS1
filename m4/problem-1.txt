@@ -1,0 +1,36 @@
+Give the output printed by java Stack for the input (where "-" means pop) it was - the best - of times - - - it was - the - -
+
+Answer the above problem in a file name problem-1.txt and add it to the folder ADS-1-practice/m4
+Push the respository to GitHub when your answer is done
+Enter the git commit ID in the blank below
+
+Activity-4
+  push()     pop()
+ 
+ push(was)
+ push(it)
+            pop(was) 
+ push(best)
+  push(the)
+  push(it)
+            pop(best)
+ push(times)
+ push(of)
+  push(the)
+  push(it)
+            pop(times)
+            pop(of)
+            pop(the)
+push(was)
+push(it)
+push(it)
+            pop(was)
+
+
+push(the)
+push(it)
+push(it)
+            pop(the)
+            pop(it)
+
+the final element of the stack is "it".
