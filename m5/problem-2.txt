@@ -1,0 +1,18 @@
+queue 1 2 3 4 5 
+stack push(1)
+stack push(2)
+stack push(3)
+stack push(4)
+stack push(5)
+so elements in stack are 1 2 3 4 5 
+elements in queue is zero 
+q.enqueue(5)
+q.enqueue(4)
+q.enqueue(3)
+q.enqueue(2)
+q.enqueue(1)
+ elements in queue are 5 4 3 2 1
+ elememts in stack are zero 
+      
+      
+      
