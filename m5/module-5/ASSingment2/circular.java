@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class circular {
+public class Circular {
 
 	public static void main(String[] args) 
 	{
@@ -17,10 +17,13 @@ public class circular {
 				ll.add(j);
 			}
 			int temp=0;
+			temp=(temp+m-1)%ll.size();
+		        System.out.print(ll.get(temp));
+			ll.remove(temp);
 			while(ll.size()!=0)
 			{
 				temp=(temp+m-1)%ll.size();
-				System.out.print(ll.get(temp)+ "");
+				System.out.print(" "+ll.get(temp));
 				ll.remove(temp);
 				
 			}
