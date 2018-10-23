@@ -1,0 +1,41 @@
+If a = {3, 6, 4, 2, 1, 0} is the input for below code
+
+public class Insertion { 
+
+public static void sort(Comparable[] a) { 	
+
+int N = a.length; 
+
+for (int i = 1; i < N; i++) { 
+
+for (int j = i; j > 0 && less(a[ j ], a[j-1]); j--) 
+
+exch(a, j, j-1); 
+
+} 
+
+}
+
+}
+
+}
+
+ANS: 3,6,4,2,1,0
+  i
+  6
+  j
+
+  i
+6 3
+  j
+
+    i
+6 3 4
+    j
+
+    i
+6 4 3
+    j
+          i
+6 4 3 2 1 0
+    j
