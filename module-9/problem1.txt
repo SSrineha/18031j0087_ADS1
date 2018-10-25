@@ -1,0 +1,30 @@
+top-down approach for E A S Y Q U E S T I O N
+  
+E A S Y Q U | E S T I O N
+  
+|E|A| |S|Y|  |Q|U| | E S T I O N
+  
+|E| |A| |S| |Y|  |Q| |U| | E S T I O N
+
+|E|A| |S|Y|  |Q|U| | E S T I O N
+
+|A|E| |S|Y|  |Q|U| | E S T I O N
+  
+A E Q S U Y |E S T I O N Left merge
+
+A E Q S U Y | |E|S| |T|I| |O|N|
+
+A E Q S U Y | |E| |S| |T| |I| |O| |N|
+
+A E Q S U Y | |E|S| |T|I| |O|N|
+
+A E Q S U Y | |E|S| |I|T| |N|O|
+
+A E Q S U Y | E I O N S T Right merge
+
+A E Q S U Y | E I O N S T array merge
+ 
+A E E I O N Q S S T U Y  
+
+
+

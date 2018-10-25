@@ -1,0 +1,62 @@
+bottom up approach for E A S Y Q U E S T I O N 
+E A S Y Q U E S T I O N 
+
+|E|A| |S|Y| |Q|U| |E|S| |T|I| |O|N| 
+
+|E|A|S|Y| |Q|U|E|S| |T|I|O|N| 
+
+|E|A|S|Y|Q|U|E|S| |T|I|O|N| 
+
+|A|E|S|Y|Q|U|E|S| |T|I|O|N| 
+
+|A|E|E|Q|S|S|U|Y| |T|I|O|N| Merge
+ 
+A E E I N O Q S S T U Y
+
+
+Give the sequence of subarray sizes in the merges performed by both the top-down and the bottom-up merge sort algorithms, for N = 39.
+
+topdown approach N=39
+      39
+
+    20|19
+
+10|10| 19
+
+5|5|5|5| 19 
+
+5 5 5 5 |19
+
+3 2 3 2  3 2 3 2 |19
+
+2 1 1 1 2 1 1 1  2 1 1 1  2 1 1 1 |19
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 |19 left merge
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 | 10|9
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1| 5|5|5|4
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|3 2 3 2 3 2 2 2 
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|2 1 1 1 2 1 1 1 2 1 1 1 1 1 1 1 
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1right merge
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 merge array
+
+
+bottom up approach N=39
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1 1
+
+2    2    2    2    2     2    2    2   2     2    2   2    2     2    2    2    2   2     2   1
+  4         4          4         4         4         4         4          4         4      2   1
+      8                    8                     8                  8               4      2   1
+              16                                          16                        4      2   1
+                                   32 |4 2 1
+                                     39
+
+
