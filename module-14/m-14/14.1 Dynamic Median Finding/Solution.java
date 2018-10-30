@@ -1,5 +1,3 @@
-package pc3;
-
 import java.util.Scanner;
 
 public class Solution
