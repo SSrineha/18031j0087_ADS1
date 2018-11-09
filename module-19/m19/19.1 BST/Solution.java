@@ -30,9 +30,8 @@ class Node
 	}
 }
 
-public class BinaryTree {
+public class Solution {
 	Node root;
-	static int indx=0;
 	public void put(Book key,int val) {
 		root=put(root,key,val);
 	}
@@ -60,22 +59,6 @@ public class BinaryTree {
 		}
 		
 	}
-	
-	public void print1(Node temp,int sval,Node tp1) {
-		if(temp!=null) {
-			//System.out.println("indx:"+indx);
-			if(indx-1 == sval) {
-				System.out.println(tp1.key);
-				return;
-			} else {
-				print1(temp.left,sval,tp1);
-				tp1 = temp;
-				indx++;
-				print1(temp.right,sval,tp1);
-			}
-		}
-		
-	}
 
 	public Node Floor(Node x,Book key) {
 		if(x==null)
@@ -92,7 +75,7 @@ public class BinaryTree {
 		}
 			return x;
 	}
-	public Node Ceiling(Node x,Book key) { 
+	public Node Ceiling(Node x,Book key) {
 		if(x==null)
 			return x;
 		int c=key.Name.compareTo(x.key.Name);
@@ -122,10 +105,6 @@ public class BinaryTree {
         }
         return node.key.toString();
     }
-	public void Select(int k) {
-		
-		print1(root,k,null);
-	}
  
 	public int get(Book Key)
 	{
@@ -146,7 +125,7 @@ public class BinaryTree {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner svn=new Scanner(System.in);
-		BinaryTree bt=new BinaryTree();
+		Solution bt=new Solution();
 		while(svn.hasNext()) {
 			String s1=svn.nextLine();
 			String s2[]=s1.split(",");
@@ -178,9 +157,6 @@ public class BinaryTree {
 				break;
 			case "max":
 				System.out.println(bt.maxValue(bt.root));
-				break;
-			case "select":
-				bt.Select(Integer.parseInt(s2[1]));
 				break;
 			}
 			
