@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 class Book{
@@ -30,8 +31,9 @@ class Node
 	}
 }
 
-public class Solution {
+public class BinaryTree {
 	Node root;
+	static int indx=0;
 	public void put(Book key,int val) {
 		root=put(root,key,val);
 	}
@@ -59,6 +61,9 @@ public class Solution {
 		}
 		
 	}
+	
+	
+	
 
 	public Node Floor(Node x,Book key) {
 		if(x==null)
@@ -75,7 +80,7 @@ public class Solution {
 		}
 			return x;
 	}
-	public Node Ceiling(Node x,Book key) {
+	public Node Ceiling(Node x,Book key) { 
 		if(x==null)
 			return x;
 		int c=key.Name.compareTo(x.key.Name);
@@ -105,6 +110,23 @@ public class Solution {
         }
         return node.key.toString();
     }
+	public void Select(int k) {
+		
+		select(root,k);
+	}
+	
+	public void select(Node temp,int sval) {
+		if(temp!=null) {
+			select(temp.left,sval);
+			if(indx==sval) {
+				System.out.println(temp.key);
+				indx++;
+				return;
+			}
+			indx++;
+			select(temp.right,sval);
+		}
+	}
  
 	public int get(Book Key)
 	{
@@ -125,7 +147,7 @@ public class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner svn=new Scanner(System.in);
-		Solution bt=new Solution();
+		BinaryTree bt=new BinaryTree();
 		while(svn.hasNext()) {
 			String s1=svn.nextLine();
 			String s2[]=s1.split(",");
@@ -158,6 +180,9 @@ public class Solution {
 			case "max":
 				System.out.println(bt.maxValue(bt.root));
 				break;
+			case "select":
+				bt.Select(Integer.parseInt(s2[1]));
+				break;
 			}
 			
 		}
@@ -165,4 +190,3 @@ public class Solution {
 	}
 
 }
-
